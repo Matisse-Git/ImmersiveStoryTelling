@@ -33,6 +33,7 @@ public class SmokeTimer : MonoBehaviour
                 {
                     foreach (GameObject smokeP in SmokeArray)
                     {
+                        Debug.Log(smokeP);
                         smokeP.GetComponent<ParticleSystem>().Play();
                     }
                     timer = timerValue/2;
