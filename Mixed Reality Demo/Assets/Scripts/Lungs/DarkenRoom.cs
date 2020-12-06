@@ -16,7 +16,9 @@ public class DarkenRoom : MonoBehaviour
     void Update()
     {
         if (Smoke.GetComponent<SmokeTimer>().smokeHasEntered){
-            GetComponent<Light>().intensity = 0.3f;
+            if (GetComponent<Light>().intensity > 0.3f){
+                GetComponent<Light>().intensity -=0.0005f;
+            }
         }  
     }
 }
