@@ -1,0 +1,22 @@
+﻿<Properties StartupConfiguration="{B0DFABBB-0B12-9180-F8DF-6AC222E7E94B}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Lungs/GrowTumor.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Lungs/GrowTumor.cs" Line="34" Column="1" />
+      <File FileName="Assets/Scripts/Lungs/DarkenRoom.cs" Line="18" Column="31" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Mixed Reality Demo" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c5d887ac-17f5-41c1-837f-aee9a6a13e7c" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
