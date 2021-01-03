@@ -6,6 +6,9 @@ public class DarkenRoom : MonoBehaviour
 {
     [SerializeField]
     GameObject Smoke;
+
+    [SerializeField]
+    float newIntensity;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +19,8 @@ public class DarkenRoom : MonoBehaviour
     void Update()
     {
         if (Smoke.GetComponent<SmokeTimer>().smokeHasEntered){
-            if (GetComponent<Light>().intensity > 0.3f){
-                GetComponent<Light>().intensity -=0.0005f;
+            if (GetComponent<Light>().intensity > newIntensity){
+                GetComponent<Light>().intensity -=0.005f;
             }
         }  
     }

@@ -7,6 +7,10 @@ public class GrowTumor : MonoBehaviour
     [SerializeField]
     GameObject Smoke;
     MeshRenderer[] tumoren;
+    [SerializeField]
+    Animator anim;
+
+    private bool animHasPlayed;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +31,14 @@ public class GrowTumor : MonoBehaviour
             for (int i = 0; i < tumoren.Length; i++)
             {
                 tumoren[i].enabled = true;
+            }
+            if (!animHasPlayed){
+                anim.Play("Base Layer.growTumors");
+                animHasPlayed = true;
+            }
         }
+        if (!anim.GetCurrentAnimatorStateInfo(0).IsName("growTumors") && animHasPlayed){
+            anim.Play("Base Layer.New State");
         }
     }
 }
