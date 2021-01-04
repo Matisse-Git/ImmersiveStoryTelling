@@ -8,6 +8,8 @@ public class SmokeTimer : MonoBehaviour
 {
     [SerializeField]
     public float timerValue;
+    [SerializeField]
+    public float secondTimerValue = 45;
     public float timer;
     public bool smokeHasEntered = false;
     bool timerIsRunning = false;
@@ -26,6 +28,9 @@ public class SmokeTimer : MonoBehaviour
     [SerializeField]
     AudioSource clip;
     bool clipPlayed = false;
+
+    [SerializeField]
+    GameObject Canvas2;
 
     private void Start()
     {
@@ -54,8 +59,10 @@ public class SmokeTimer : MonoBehaviour
                         Debug.Log(smokeP);
                         smokeP.GetComponent<ParticleSystem>().Play();
                     }
-                    timer = timerValue/2;
+                    timer = secondTimerValue;
                     smokeHasEntered = true;
+                    Canvas2.SetActive(true);
+
                 }
                 else
                 {
@@ -67,6 +74,7 @@ public class SmokeTimer : MonoBehaviour
                     arrowPoint.SetActive(true);
                     Canvas.SetActive(true);
                     Canvas.GetComponentInChildren<Text>().text = "You can now return to the mouth.";
+                    Canvas2.SetActive(false);
                     
                 }
             }
