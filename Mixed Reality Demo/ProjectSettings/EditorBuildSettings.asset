@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/inside_bad_mouth.unity
     guid: 69b71629ca3020246a1e6138bea87e7f
+  - enabled: 1
+    path: Assets/Scenes/EndScene.unity
+    guid: 66932f786a04bae4a8fae1c77770d20d
   m_configObjects:
     Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 7d1a8c87c03602c45a6d0f1ebf0f431f,
       type: 2}
